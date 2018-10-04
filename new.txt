@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>sum of array</title>
+<style>
+h1
+{
+text-align: center;
+}
+calculate
+{
+text-align: center;
+}
+</style>
+<script language="javascript">
+function bill()
+{
+var  a=parseInt(document.getElementById("val").value);
+var ansD = document.getElementById("answer");
+
+if(a<=100){
+ansD.value=a*2;
+}
+else
+ansD.value=a*3;}
+
+</script>
+</head>
+<body>
+<form name="form1" method="get" >
+<h1>Mobile Bill</h1>
+<table border="1" align="center">
+
+<tr>
+<td>Mobile No.</td>
+<td>
+<input type="text" pattern="[0-9].{10}" name="mobile number" placeholder="Mobile number" required /> 
+</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>
+<input type="text" placeholder="Name" required/>
+</td>
+</tr>
+<TR>
+<TD>Your E-mail address</TD>
+<TD><INPUT TYPE="TEXT" NAME="email">
+</TD>
+</TR>
+<tr>
+<td>Number of calls</td>
+<td>
+<input type="text" placeholder="Calls" id="val" name="val" value=""/>
+</td>
+</tr>
+</table>
+Calulate:
+<input type="button" onclick="javascript:bill()" name="BILL" value="Get bill" />
+
+
+<input type="text" id="answer" name="answer" />
+</body>
+</html>
